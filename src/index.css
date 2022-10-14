@@ -1,0 +1,145 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-weight: 600;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  /* background-color: black; */
+
+
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.App {
+  max-width: 500px;
+  width: 100%;
+  min-height: 400px;
+  box-shadow: 1px 5px 12px rgb(17, 160, 160);
+  margin: 50px auto;
+  padding: 50px;
+  color: rgb(17, 160, 160);
+  /* border-radius:30px; */
+
+}
+
+
+h1 {
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-weight: 900;
+  color: rgb(17, 160, 160);
+}
+
+ form{
+  width: 100%;
+  height: 40px;
+  margin: 20px 0;
+  display: flex;
+  /* backgroun  d-color: palevioletred; */
+}
+
+form input {
+  flex: 3;
+  border: none;
+  outline: none;
+  border-bottom: 1px solid aqua;
+  margin: 0 5px;
+  color: rgb(0, 0, 0);
+  border-radius: 5px;
+  padding-left: 1rem;
+  background: #fdfdfd;
+}
+
+ul li {
+  list-style: none;
+  border: 1px solid rgb(17, 160, 160);
+  margin: 10px 0;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-transform: capitalize;
+}
+
+ul li .active {
+  opacity: 0.5;
+  text-decoration: line-through;
+}
+
+ul li input,
+.row input {
+  color: rgb(0, 0, 0);
+  margin-right: 5px;
+  border: 1px solid rgb(17, 160, 160);
+  transform: translateY(1px);
+  border-radius: 4px;
+}
+ul li h7{
+  font-size: 10px;
+}
+ul li button,
+.row button {
+  border-radius: 50px;
+  outline: none;
+  color: rgb(255, 255, 255);
+  background: rgb(21, 185, 185);
+  padding: 5px 15px;
+  border: none;
+  cursor: pointer;
+}
+
+ul li button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+
+}
+
+.btn-icon-add{
+    height: 100%;
+    width: 100%;
+    border: none;
+    outline: none;
+    color: white;
+    border-radius: 30px;
+     background: rgb(21, 185, 185);
+}
+.row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.row #delete {
+  background: rgb(247, 114, 73);
+}
+
+label {
+  cursor: pointer;
+}
+
+
+@media (max-width:400px) {
+  .App {
+    padding: 10px;
+
+  }
+  h2 {
+  text-align: center;
+  color: rgb(17, 160, 160);
+}
+}
+
+h2 {
+  text-align: center;
+  color: rgb(17, 160, 160);
+}
